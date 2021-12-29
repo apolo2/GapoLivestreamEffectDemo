@@ -1,0 +1,38 @@
+PODS:
+  - BytedEffectSDK (4.2.3)
+  - HaishinKit (1.1.4):
+    - Logboard (~> 2.2.1)
+  - Logboard (2.2.2)
+  - PureLayout (3.1.9)
+
+DEPENDENCIES:
+  - BytedEffectSDK (from `./`)
+  - HaishinKit (from `https://github.com/apolo2/HaishinKit.swift.git`, branch `updates-from-original`)
+  - PureLayout
+
+SPEC REPOS:
+  trunk:
+    - Logboard
+    - PureLayout
+
+EXTERNAL SOURCES:
+  BytedEffectSDK:
+    :path: "./"
+  HaishinKit:
+    :branch: updates-from-original
+    :git: https://github.com/apolo2/HaishinKit.swift.git
+
+CHECKOUT OPTIONS:
+  HaishinKit:
+    :commit: 7bc4209242ac13c9b9a996a388dca6e6ecc8b41b
+    :git: https://github.com/apolo2/HaishinKit.swift.git
+
+SPEC CHECKSUMS:
+  BytedEffectSDK: bdca628738d549ecd587eaabaca3335c557ea73e
+  HaishinKit: 361dfd7d5feaa358946cff681833f7c747fbc37b
+  Logboard: 0ab6bbd984ed032b3f0b615cef06779a73445c80
+  PureLayout: 5fb5e5429519627d60d079ccb1eaa7265ce7cf88
+
+PODFILE CHECKSUM: 95c02727be2eb0953260210faafa27c7330a9f8f
+
+COCOAPODS: 1.11.2

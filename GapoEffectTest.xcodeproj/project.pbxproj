@@ -7,23 +7,226 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		346076BA1405B54CFDB4182E /* Pods_GapoEffectTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8941D7843778531A1BC1F364 /* Pods_GapoEffectTest.framework */; };
 		84B021C2277C68AE0064B00A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B021C1277C68AE0064B00A /* AppDelegate.swift */; };
-		84B021C4277C68AE0064B00A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B021C3277C68AE0064B00A /* SceneDelegate.swift */; };
 		84B021C6277C68AE0064B00A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B021C5277C68AE0064B00A /* ViewController.swift */; };
 		84B021C9277C68AE0064B00A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B021C7277C68AE0064B00A /* Main.storyboard */; };
 		84B021CB277C68B00064B00A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B021CA277C68B00064B00A /* Assets.xcassets */; };
 		84B021CE277C68B00064B00A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B021CC277C68B00064B00A /* LaunchScreen.storyboard */; };
+		84B022E6277C698A0064B00A /* BytedEffectSDK.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 84B021D5277C69840064B00A /* BytedEffectSDK.podspec */; };
+		84B022E8277C698A0064B00A /* gapo_test_20211223_20220107_vn.gapo.app_4.2.3.licbag in Resources */ = {isa = PBXBuildFile; fileRef = 84B02207277C69880064B00A /* gapo_test_20211223_20220107_vn.gapo.app_4.2.3.licbag */; };
+		84B022E9277C698A0064B00A /* ModelResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84B02209277C69890064B00A /* ModelResource.bundle */; };
+		84B022EA277C698A0064B00A /* ComposeMakeup.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84B0220A277C69890064B00A /* ComposeMakeup.bundle */; };
+		84B022EB277C698A0064B00A /* LicenseBag.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84B0220B277C69890064B00A /* LicenseBag.bundle */; };
+		84B022EC277C698A0064B00A /* BELicenseHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84B02210277C69890064B00A /* BELicenseHelper.mm */; };
+		84B022ED277C698A0064B00A /* BEHttpRequestProvider.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84B02213277C69890064B00A /* BEHttpRequestProvider.mm */; };
+		84B022EE277C698A0064B00A /* BEEffectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B02217277C69890064B00A /* BEEffectManager.m */; };
+		84B022EF277C698A0064B00A /* BEEffectResourceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B02218277C69890064B00A /* BEEffectResourceHelper.m */; };
+		84B022F0277C698A0064B00A /* BEOpenGLRenderHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0221C277C69890064B00A /* BEOpenGLRenderHelper.m */; };
+		84B022F1277C698A0064B00A /* BETimeRecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0221F277C69890064B00A /* BETimeRecoder.m */; };
+		84B022F2277C698A0064B00A /* BEGLTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B02222277C69890064B00A /* BEGLTexture.m */; };
+		84B022F3277C698A0064B00A /* BECommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B02223277C69890064B00A /* BECommonUtils.m */; };
+		84B022F4277C698A0064B00A /* BEImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B02224277C69890064B00A /* BEImageUtils.m */; };
+		84B022F5277C698A0064B00A /* BEHandAlgorithmTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0222A277C69890064B00A /* BEHandAlgorithmTask.m */; };
+		84B022F6277C698A0064B00A /* BECarDetectTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0222B277C69890064B00A /* BECarDetectTask.m */; };
+		84B022F7277C698A0064B00A /* BEChromaKeyingAlgorithmTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0222D277C69890064B00A /* BEChromaKeyingAlgorithmTask.m */; };
+		84B022F8277C698A0064B00A /* BEHairParserAlgorithmTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0222E277C69890064B00A /* BEHairParserAlgorithmTask.m */; };
+		84B022F9277C698A0064B00A /* BEBachSkeletonAlgorithmTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0222F277C69890064B00A /* BEBachSkeletonAlgorithmTask.m */; };
+		84B022FA277C698A0064B00A /* BEStudentIdOcrTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B02230277C69890064B00A /* BEStudentIdOcrTask.m */; };
+		84B022FB277C698A0064B00A /* BEPetFaceAlgorithmTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B02231277C69890064B00A /* BEPetFaceAlgorithmTask.m */; };
+		84B022FC277C698A0064B00A /* BEPortraitMattingAlgorithmTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B02232277C69890064B00A /* BEPortraitMattingAlgorithmTask.m */; };
+		84B022FD277C698A0064B00A /* BEDynamicGestureAlgorithmTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B02237277C69890064B00A /* BEDynamicGestureAlgorithmTask.m */; };
+		84B022FE277C698A0064B00A /* BEHeadSegmentAlgorithmTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B02239277C69890064B00A /* BEHeadSegmentAlgorithmTask.m */; };
+		84B022FF277C698A0064B00A /* BEHumanDistanceAlgorithmTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0223A277C69890064B00A /* BEHumanDistanceAlgorithmTask.m */; };
+		84B02300277C698A0064B00A /* BEFaceAlgorithmTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0223C277C69890064B00A /* BEFaceAlgorithmTask.m */; };
+		84B02301277C698A0064B00A /* BEFaceVerifyAlgorithmTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0223E277C69890064B00A /* BEFaceVerifyAlgorithmTask.m */; };
+		84B02302277C698A0064B00A /* BESkinSegmentationAlgorithmTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0223F277C69890064B00A /* BESkinSegmentationAlgorithmTask.m */; };
+		84B02303277C698A0064B00A /* BEVideoClsAlgorithmTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B02240277C69890064B00A /* BEVideoClsAlgorithmTask.m */; };
+		84B02304277C698A0064B00A /* BEAnimojiAlgorithmTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B02241277C69890064B00A /* BEAnimojiAlgorithmTask.m */; };
+		84B02305277C698A0064B00A /* BEC1AlgorithmTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B02243277C69890064B00A /* BEC1AlgorithmTask.m */; };
+		84B02306277C698A0064B00A /* BESkeletonAlgorithmTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B02246277C698A0064B00A /* BESkeletonAlgorithmTask.m */; };
+		84B02307277C698A0064B00A /* BEFaceClusterAlgorithmTask.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84B02247277C698A0064B00A /* BEFaceClusterAlgorithmTask.mm */; };
+		84B02308277C698A0064B00A /* BEC2AlgorithmTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0224D277C698A0064B00A /* BEC2AlgorithmTask.m */; };
+		84B02309277C698A0064B00A /* BEGazeEstimationTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0224F277C698A0064B00A /* BEGazeEstimationTask.m */; };
+		84B0230A277C698A0064B00A /* BESkySegAlgorithmTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B02250277C698A0064B00A /* BESkySegAlgorithmTask.m */; };
+		84B0230B277C698A0064B00A /* BEActionRecognitionAlgorithmTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B02252277C698A0064B00A /* BEActionRecognitionAlgorithmTask.m */; };
+		84B0230C277C698A0064B00A /* BELightClsAlgorithmTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B02253277C698A0064B00A /* BELightClsAlgorithmTask.m */; };
+		84B0230D277C698A0064B00A /* BEConcentrationTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0225A277C698A0064B00A /* BEConcentrationTask.m */; };
+		84B0230E277C698A0064B00A /* BEAlgorithmResourceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0225B277C698A0064B00A /* BEAlgorithmResourceHelper.m */; };
+		84B0230F277C698A0064B00A /* BEAlgorithmTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0225D277C698A0064B00A /* BEAlgorithmTask.m */; };
+		84B02310277C698A0064B00A /* BEAlgorithmKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B02261277C698A0064B00A /* BEAlgorithmKey.m */; };
+		84B02311277C698A0064B00A /* BEAlgorithmTaskFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B02262277C698A0064B00A /* BEAlgorithmTaskFactory.m */; };
+		84B02312277C698A0064B00A /* BEAdaptiveSharpenTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B02264277C698A0064B00A /* BEAdaptiveSharpenTask.m */; };
+		84B02313277C698A0064B00A /* BEImageOpeartion.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B02265277C698A0064B00A /* BEImageOpeartion.m */; };
+		84B02314277C698A0064B00A /* BEVideoSRTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B02269277C698A0064B00A /* BEVideoSRTask.m */; };
+		84B02315277C698A0064B00A /* BELensResourceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0226A277C698A0064B00A /* BELensResourceHelper.m */; };
+		84B02316277C698A0064B00A /* BEImageQualityProcessManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0226D277C698A0064B00A /* BEImageQualityProcessManager.m */; };
+		84B02317277C698A0064B00A /* BEAvatarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B02270277C698A0064B00A /* BEAvatarManager.m */; };
+		84B0234B277C6A2E0064B00A /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B02349277C6A2E0064B00A /* DemoViewController.swift */; };
+		84B0234C277C6A2E0064B00A /* DemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84B0234A277C6A2E0064B00A /* DemoViewController.xib */; };
+		84B0234E277C707F0064B00A /* LivestreamEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B0234D277C707F0064B00A /* LivestreamEffect.swift */; };
+		84B02351277C713D0064B00A /* GPEffectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B02350277C713D0064B00A /* GPEffectManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35BC5547AE5E5BC525D4984F /* Pods-GapoEffectTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GapoEffectTest.release.xcconfig"; path = "Target Support Files/Pods-GapoEffectTest/Pods-GapoEffectTest.release.xcconfig"; sourceTree = "<group>"; };
+		7449C9A50F9A78E18FA285DB /* Pods-GapoEffectTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GapoEffectTest.debug.xcconfig"; path = "Target Support Files/Pods-GapoEffectTest/Pods-GapoEffectTest.debug.xcconfig"; sourceTree = "<group>"; };
 		84B021BE277C68AE0064B00A /* GapoEffectTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GapoEffectTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B021C1277C68AE0064B00A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84B021C3277C68AE0064B00A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		84B021C5277C68AE0064B00A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		84B021C8277C68AE0064B00A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84B021CA277C68B00064B00A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84B021CD277C68B00064B00A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84B021CF277C68B00064B00A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84B021D5277C69840064B00A /* BytedEffectSDK.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BytedEffectSDK.podspec; sourceTree = "<group>"; };
+		84B021D9277C69880064B00A /* bef_effect_ai_foot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_foot.h; sourceTree = "<group>"; };
+		84B021DA277C69880064B00A /* bef_effect_ai_gaze_estimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_gaze_estimation.h; sourceTree = "<group>"; };
+		84B021DB277C69880064B00A /* bef_effect_ai_api_advanced.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_api_advanced.h; sourceTree = "<group>"; };
+		84B021DC277C69880064B00A /* RenderMsgDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderMsgDelegate.h; sourceTree = "<group>"; };
+		84B021DD277C69880064B00A /* bef_effect_ai_lightcls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_lightcls.h; sourceTree = "<group>"; };
+		84B021DE277C69880064B00A /* bef_effect_ai_c2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_c2.h; sourceTree = "<group>"; };
+		84B021DF277C69880064B00A /* bef_effect_ai_skin_segmentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_skin_segmentation.h; sourceTree = "<group>"; };
+		84B021E0277C69880064B00A /* bef_effect_ai_message_define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_message_define.h; sourceTree = "<group>"; };
+		84B021E1277C69880064B00A /* BytedLicenseDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BytedLicenseDefine.h; sourceTree = "<group>"; };
+		84B021E2277C69880064B00A /* bef_effect_ai_headseg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_headseg.h; sourceTree = "<group>"; };
+		84B021E3277C69880064B00A /* bef_effect_ai_animoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_animoji.h; sourceTree = "<group>"; };
+		84B021E4277C69880064B00A /* bef_effect_ai_public_define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_public_define.h; sourceTree = "<group>"; };
+		84B021E5277C69880064B00A /* bef_effect_ai_dynamic_gesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_dynamic_gesture.h; sourceTree = "<group>"; };
+		84B021E6277C69880064B00A /* bef_effect_ai_qrcode_decode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_qrcode_decode.h; sourceTree = "<group>"; };
+		84B021E7277C69880064B00A /* bef_effect_ai_face_clustering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_face_clustering.h; sourceTree = "<group>"; };
+		84B021E8277C69880064B00A /* bef_effect_ai_license_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_license_parser.h; sourceTree = "<group>"; };
+		84B021E9277C69880064B00A /* bef_ai_image_quality_enhancement_adaptive_sharpen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_ai_image_quality_enhancement_adaptive_sharpen.h; sourceTree = "<group>"; };
+		84B021EA277C69880064B00A /* bef_effect_ai_c1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_c1.h; sourceTree = "<group>"; };
+		84B021EB277C69880064B00A /* bef_effect_ai_face_verify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_face_verify.h; sourceTree = "<group>"; };
+		84B021EC277C69880064B00A /* byted_effect_ai_pixelformat_cvt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = byted_effect_ai_pixelformat_cvt.h; sourceTree = "<group>"; };
+		84B021ED277C69880064B00A /* bef_effect_ai_license_wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_license_wrapper.h; sourceTree = "<group>"; };
+		84B021EE277C69880064B00A /* bef_effect_ai_pet_face.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_pet_face.h; sourceTree = "<group>"; };
+		84B021EF277C69880064B00A /* bef_effect_ai_dynamic_action.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_dynamic_action.h; sourceTree = "<group>"; };
+		84B021F0277C69880064B00A /* bef_effect_ai_yuv_process.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_yuv_process.h; sourceTree = "<group>"; };
+		84B021F1277C69880064B00A /* bef_effect_ai_error_code_format.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_error_code_format.h; sourceTree = "<group>"; };
+		84B021F2277C69880064B00A /* bef_ai_image_quality_enhancement_public_define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_ai_image_quality_enhancement_public_define.h; sourceTree = "<group>"; };
+		84B021F3277C69880064B00A /* bef_ai_image_quality_enhancement_video_sr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_ai_image_quality_enhancement_video_sr.h; sourceTree = "<group>"; };
+		84B021F4277C69880064B00A /* bef_effect_ai_online_license.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_online_license.h; sourceTree = "<group>"; };
+		84B021F5277C69880064B00A /* bef_effect_ai_hand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_hand.h; sourceTree = "<group>"; };
+		84B021F6277C69880064B00A /* bef_effect_ai_student_id_ocr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_student_id_ocr.h; sourceTree = "<group>"; };
+		84B021F7277C69880064B00A /* bef_effect_ai_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_api.h; sourceTree = "<group>"; };
+		84B021F8277C69880064B00A /* bef_effect_ai_general_object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_general_object.h; sourceTree = "<group>"; };
+		84B021F9277C69880064B00A /* bef_effect_ai_video_cls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_video_cls.h; sourceTree = "<group>"; };
+		84B021FA277C69880064B00A /* bef_effect_ai_portrait_matting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_portrait_matting.h; sourceTree = "<group>"; };
+		84B021FB277C69880064B00A /* bef_effect_ai_face_attribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_face_attribute.h; sourceTree = "<group>"; };
+		84B021FC277C69880064B00A /* bef_effect_ai_chroma_keying.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_chroma_keying.h; sourceTree = "<group>"; };
+		84B021FD277C69880064B00A /* bef_effect_ai_human_distance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_human_distance.h; sourceTree = "<group>"; };
+		84B021FE277C69880064B00A /* bef_effect_ai_version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_version.h; sourceTree = "<group>"; };
+		84B021FF277C69880064B00A /* bef_effect_ai_car_detect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_car_detect.h; sourceTree = "<group>"; };
+		84B02200277C69880064B00A /* bef_effect_ai_skeleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_skeleton.h; sourceTree = "<group>"; };
+		84B02201277C69880064B00A /* bef_effect_ai_skyseg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_skyseg.h; sourceTree = "<group>"; };
+		84B02202277C69880064B00A /* bef_effect_ai_action_recognition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_action_recognition.h; sourceTree = "<group>"; };
+		84B02203277C69880064B00A /* bef_effect_ai_face_detect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_face_detect.h; sourceTree = "<group>"; };
+		84B02204277C69880064B00A /* bef_effect_ai_hairparser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_hairparser.h; sourceTree = "<group>"; };
+		84B02205277C69880064B00A /* bef_ai_image_quality_enhancement_night_scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_ai_image_quality_enhancement_night_scene.h; sourceTree = "<group>"; };
+		84B02206277C69880064B00A /* bef_effect_ai_bach_skeleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_bach_skeleton.h; sourceTree = "<group>"; };
+		84B02207277C69880064B00A /* gapo_test_20211223_20220107_vn.gapo.app_4.2.3.licbag */ = {isa = PBXFileReference; lastKnownFileType = file; path = gapo_test_20211223_20220107_vn.gapo.app_4.2.3.licbag; sourceTree = "<group>"; };
+		84B02209277C69890064B00A /* ModelResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ModelResource.bundle; sourceTree = "<group>"; };
+		84B0220A277C69890064B00A /* ComposeMakeup.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ComposeMakeup.bundle; sourceTree = "<group>"; };
+		84B0220B277C69890064B00A /* LicenseBag.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LicenseBag.bundle; sourceTree = "<group>"; };
+		84B0220E277C69890064B00A /* Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
+		84B02210277C69890064B00A /* BELicenseHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BELicenseHelper.mm; sourceTree = "<group>"; };
+		84B02211277C69890064B00A /* BELicenseHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BELicenseHelper.h; sourceTree = "<group>"; };
+		84B02212277C69890064B00A /* BEHttpRequestProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEHttpRequestProvider.h; sourceTree = "<group>"; };
+		84B02213277C69890064B00A /* BEHttpRequestProvider.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BEHttpRequestProvider.mm; sourceTree = "<group>"; };
+		84B02214277C69890064B00A /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		84B02215277C69890064B00A /* macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = macro.h; sourceTree = "<group>"; };
+		84B02217277C69890064B00A /* BEEffectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEEffectManager.m; sourceTree = "<group>"; };
+		84B02218277C69890064B00A /* BEEffectResourceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEEffectResourceHelper.m; sourceTree = "<group>"; };
+		84B02219277C69890064B00A /* BEEffectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEEffectManager.h; sourceTree = "<group>"; };
+		84B0221A277C69890064B00A /* BEEffectResourceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEEffectResourceHelper.h; sourceTree = "<group>"; };
+		84B0221C277C69890064B00A /* BEOpenGLRenderHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEOpenGLRenderHelper.m; sourceTree = "<group>"; };
+		84B0221D277C69890064B00A /* BECommonUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BECommonUtils.h; sourceTree = "<group>"; };
+		84B0221E277C69890064B00A /* BEGLTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEGLTexture.h; sourceTree = "<group>"; };
+		84B0221F277C69890064B00A /* BETimeRecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BETimeRecoder.m; sourceTree = "<group>"; };
+		84B02220277C69890064B00A /* BEImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEImageUtils.h; sourceTree = "<group>"; };
+		84B02221277C69890064B00A /* BEOpenGLRenderHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEOpenGLRenderHelper.h; sourceTree = "<group>"; };
+		84B02222277C69890064B00A /* BEGLTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEGLTexture.m; sourceTree = "<group>"; };
+		84B02223277C69890064B00A /* BECommonUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BECommonUtils.m; sourceTree = "<group>"; };
+		84B02224277C69890064B00A /* BEImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEImageUtils.m; sourceTree = "<group>"; };
+		84B02225277C69890064B00A /* BETimeRecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BETimeRecoder.h; sourceTree = "<group>"; };
+		84B02227277C69890064B00A /* BEAlgorithmResourceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEAlgorithmResourceHelper.h; sourceTree = "<group>"; };
+		84B02229277C69890064B00A /* BESkeletonAlgorithmTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BESkeletonAlgorithmTask.h; sourceTree = "<group>"; };
+		84B0222A277C69890064B00A /* BEHandAlgorithmTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEHandAlgorithmTask.m; sourceTree = "<group>"; };
+		84B0222B277C69890064B00A /* BECarDetectTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BECarDetectTask.m; sourceTree = "<group>"; };
+		84B0222C277C69890064B00A /* BEC1AlgorithmTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEC1AlgorithmTask.h; sourceTree = "<group>"; };
+		84B0222D277C69890064B00A /* BEChromaKeyingAlgorithmTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEChromaKeyingAlgorithmTask.m; sourceTree = "<group>"; };
+		84B0222E277C69890064B00A /* BEHairParserAlgorithmTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEHairParserAlgorithmTask.m; sourceTree = "<group>"; };
+		84B0222F277C69890064B00A /* BEBachSkeletonAlgorithmTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEBachSkeletonAlgorithmTask.m; sourceTree = "<group>"; };
+		84B02230277C69890064B00A /* BEStudentIdOcrTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEStudentIdOcrTask.m; sourceTree = "<group>"; };
+		84B02231277C69890064B00A /* BEPetFaceAlgorithmTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEPetFaceAlgorithmTask.m; sourceTree = "<group>"; };
+		84B02232277C69890064B00A /* BEPortraitMattingAlgorithmTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEPortraitMattingAlgorithmTask.m; sourceTree = "<group>"; };
+		84B02233277C69890064B00A /* BELightClsAlgorithmTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BELightClsAlgorithmTask.h; sourceTree = "<group>"; };
+		84B02234277C69890064B00A /* BEActionRecognitionAlgorithmTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEActionRecognitionAlgorithmTask.h; sourceTree = "<group>"; };
+		84B02235277C69890064B00A /* BEFaceClusterAlgorithmTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEFaceClusterAlgorithmTask.h; sourceTree = "<group>"; };
+		84B02236277C69890064B00A /* BESkySegAlgorithmTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BESkySegAlgorithmTask.h; sourceTree = "<group>"; };
+		84B02237277C69890064B00A /* BEDynamicGestureAlgorithmTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEDynamicGestureAlgorithmTask.m; sourceTree = "<group>"; };
+		84B02238277C69890064B00A /* BEGazeEstimationTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEGazeEstimationTask.h; sourceTree = "<group>"; };
+		84B02239277C69890064B00A /* BEHeadSegmentAlgorithmTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEHeadSegmentAlgorithmTask.m; sourceTree = "<group>"; };
+		84B0223A277C69890064B00A /* BEHumanDistanceAlgorithmTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEHumanDistanceAlgorithmTask.m; sourceTree = "<group>"; };
+		84B0223B277C69890064B00A /* BEC2AlgorithmTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEC2AlgorithmTask.h; sourceTree = "<group>"; };
+		84B0223C277C69890064B00A /* BEFaceAlgorithmTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEFaceAlgorithmTask.m; sourceTree = "<group>"; };
+		84B0223D277C69890064B00A /* BEConcentrationTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEConcentrationTask.h; sourceTree = "<group>"; };
+		84B0223E277C69890064B00A /* BEFaceVerifyAlgorithmTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEFaceVerifyAlgorithmTask.m; sourceTree = "<group>"; };
+		84B0223F277C69890064B00A /* BESkinSegmentationAlgorithmTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BESkinSegmentationAlgorithmTask.m; sourceTree = "<group>"; };
+		84B02240277C69890064B00A /* BEVideoClsAlgorithmTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEVideoClsAlgorithmTask.m; sourceTree = "<group>"; };
+		84B02241277C69890064B00A /* BEAnimojiAlgorithmTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEAnimojiAlgorithmTask.m; sourceTree = "<group>"; };
+		84B02242277C69890064B00A /* BEChromaKeyingAlgorithmTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEChromaKeyingAlgorithmTask.h; sourceTree = "<group>"; };
+		84B02243277C69890064B00A /* BEC1AlgorithmTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEC1AlgorithmTask.m; sourceTree = "<group>"; };
+		84B02244277C698A0064B00A /* BECarDetectTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BECarDetectTask.h; sourceTree = "<group>"; };
+		84B02245277C698A0064B00A /* BEHandAlgorithmTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEHandAlgorithmTask.h; sourceTree = "<group>"; };
+		84B02246277C698A0064B00A /* BESkeletonAlgorithmTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BESkeletonAlgorithmTask.m; sourceTree = "<group>"; };
+		84B02247277C698A0064B00A /* BEFaceClusterAlgorithmTask.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BEFaceClusterAlgorithmTask.mm; sourceTree = "<group>"; };
+		84B02248277C698A0064B00A /* BEBachSkeletonAlgorithmTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEBachSkeletonAlgorithmTask.h; sourceTree = "<group>"; };
+		84B02249277C698A0064B00A /* BEStudentIdOcrTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEStudentIdOcrTask.h; sourceTree = "<group>"; };
+		84B0224A277C698A0064B00A /* BEHairParserAlgorithmTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEHairParserAlgorithmTask.h; sourceTree = "<group>"; };
+		84B0224B277C698A0064B00A /* BEFaceAlgorithmTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEFaceAlgorithmTask.h; sourceTree = "<group>"; };
+		84B0224C277C698A0064B00A /* BEHumanDistanceAlgorithmTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEHumanDistanceAlgorithmTask.h; sourceTree = "<group>"; };
+		84B0224D277C698A0064B00A /* BEC2AlgorithmTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEC2AlgorithmTask.m; sourceTree = "<group>"; };
+		84B0224E277C698A0064B00A /* BEHeadSegmentAlgorithmTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEHeadSegmentAlgorithmTask.h; sourceTree = "<group>"; };
+		84B0224F277C698A0064B00A /* BEGazeEstimationTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEGazeEstimationTask.m; sourceTree = "<group>"; };
+		84B02250277C698A0064B00A /* BESkySegAlgorithmTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BESkySegAlgorithmTask.m; sourceTree = "<group>"; };
+		84B02251277C698A0064B00A /* BEDynamicGestureAlgorithmTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEDynamicGestureAlgorithmTask.h; sourceTree = "<group>"; };
+		84B02252277C698A0064B00A /* BEActionRecognitionAlgorithmTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEActionRecognitionAlgorithmTask.m; sourceTree = "<group>"; };
+		84B02253277C698A0064B00A /* BELightClsAlgorithmTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BELightClsAlgorithmTask.m; sourceTree = "<group>"; };
+		84B02254277C698A0064B00A /* BEPortraitMattingAlgorithmTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEPortraitMattingAlgorithmTask.h; sourceTree = "<group>"; };
+		84B02255277C698A0064B00A /* BEPetFaceAlgorithmTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEPetFaceAlgorithmTask.h; sourceTree = "<group>"; };
+		84B02256277C698A0064B00A /* BEAnimojiAlgorithmTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEAnimojiAlgorithmTask.h; sourceTree = "<group>"; };
+		84B02257277C698A0064B00A /* BEVideoClsAlgorithmTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEVideoClsAlgorithmTask.h; sourceTree = "<group>"; };
+		84B02258277C698A0064B00A /* BESkinSegmentationAlgorithmTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BESkinSegmentationAlgorithmTask.h; sourceTree = "<group>"; };
+		84B02259277C698A0064B00A /* BEFaceVerifyAlgorithmTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEFaceVerifyAlgorithmTask.h; sourceTree = "<group>"; };
+		84B0225A277C698A0064B00A /* BEConcentrationTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEConcentrationTask.m; sourceTree = "<group>"; };
+		84B0225B277C698A0064B00A /* BEAlgorithmResourceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEAlgorithmResourceHelper.m; sourceTree = "<group>"; };
+		84B0225D277C698A0064B00A /* BEAlgorithmTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEAlgorithmTask.m; sourceTree = "<group>"; };
+		84B0225E277C698A0064B00A /* BEAlgorithmKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEAlgorithmKey.h; sourceTree = "<group>"; };
+		84B0225F277C698A0064B00A /* BEAlgorithmTaskFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEAlgorithmTaskFactory.h; sourceTree = "<group>"; };
+		84B02260277C698A0064B00A /* BEAlgorithmTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEAlgorithmTask.h; sourceTree = "<group>"; };
+		84B02261277C698A0064B00A /* BEAlgorithmKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEAlgorithmKey.m; sourceTree = "<group>"; };
+		84B02262277C698A0064B00A /* BEAlgorithmTaskFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEAlgorithmTaskFactory.m; sourceTree = "<group>"; };
+		84B02264277C698A0064B00A /* BEAdaptiveSharpenTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEAdaptiveSharpenTask.m; sourceTree = "<group>"; };
+		84B02265277C698A0064B00A /* BEImageOpeartion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEImageOpeartion.m; sourceTree = "<group>"; };
+		84B02266277C698A0064B00A /* BELensResourceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BELensResourceHelper.h; sourceTree = "<group>"; };
+		84B02267277C698A0064B00A /* BEVideoSRTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEVideoSRTask.h; sourceTree = "<group>"; };
+		84B02268277C698A0064B00A /* BEImageQualityProcessManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEImageQualityProcessManager.h; sourceTree = "<group>"; };
+		84B02269277C698A0064B00A /* BEVideoSRTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEVideoSRTask.m; sourceTree = "<group>"; };
+		84B0226A277C698A0064B00A /* BELensResourceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BELensResourceHelper.m; sourceTree = "<group>"; };
+		84B0226B277C698A0064B00A /* BEImageOpeartion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEImageOpeartion.h; sourceTree = "<group>"; };
+		84B0226C277C698A0064B00A /* BEAdaptiveSharpenTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEAdaptiveSharpenTask.h; sourceTree = "<group>"; };
+		84B0226D277C698A0064B00A /* BEImageQualityProcessManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEImageQualityProcessManager.m; sourceTree = "<group>"; };
+		84B0226F277C698A0064B00A /* BEAvatarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEAvatarManager.h; sourceTree = "<group>"; };
+		84B02270277C698A0064B00A /* BEAvatarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEAvatarManager.m; sourceTree = "<group>"; };
+		84B02349277C6A2E0064B00A /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
+		84B0234A277C6A2E0064B00A /* DemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoViewController.xib; sourceTree = "<group>"; };
+		84B0234D277C707F0064B00A /* LivestreamEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivestreamEffect.swift; sourceTree = "<group>"; };
+		84B0234F277C713D0064B00A /* GPEffectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPEffectManager.h; sourceTree = "<group>"; };
+		84B02350277C713D0064B00A /* GPEffectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPEffectManager.m; sourceTree = "<group>"; };
+		84B02352277C71C30064B00A /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		8941D7843778531A1BC1F364 /* Pods_GapoEffectTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GapoEffectTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +234,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				346076BA1405B54CFDB4182E /* Pods_GapoEffectTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D6350A4E0D6949B723CBDBD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7449C9A50F9A78E18FA285DB /* Pods-GapoEffectTest.debug.xcconfig */,
+				35BC5547AE5E5BC525D4984F /* Pods-GapoEffectTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		84B021B5277C68AE0064B00A = {
 			isa = PBXGroup;
 			children = (
+				84B021D5277C69840064B00A /* BytedEffectSDK.podspec */,
+				84B02207277C69880064B00A /* gapo_test_20211223_20220107_vn.gapo.app_4.2.3.licbag */,
+				84B0220C277C69890064B00A /* BytePlusFiles */,
+				84B02208277C69890064B00A /* BytePlusResource */,
+				84B021D7277C69880064B00A /* include */,
 				84B021C0277C68AE0064B00A /* GapoEffectTest */,
 				84B021BF277C68AE0064B00A /* Products */,
+				5D6350A4E0D6949B723CBDBD /* Pods */,
+				A21EA55CDFE8E03B6363A980 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +277,268 @@
 			isa = PBXGroup;
 			children = (
 				84B021C1277C68AE0064B00A /* AppDelegate.swift */,
-				84B021C3277C68AE0064B00A /* SceneDelegate.swift */,
 				84B021C5277C68AE0064B00A /* ViewController.swift */,
 				84B021C7277C68AE0064B00A /* Main.storyboard */,
 				84B021CA277C68B00064B00A /* Assets.xcassets */,
 				84B021CC277C68B00064B00A /* LaunchScreen.storyboard */,
 				84B021CF277C68B00064B00A /* Info.plist */,
+				84B02349277C6A2E0064B00A /* DemoViewController.swift */,
+				84B0234A277C6A2E0064B00A /* DemoViewController.xib */,
+				84B0234D277C707F0064B00A /* LivestreamEffect.swift */,
+				84B0234F277C713D0064B00A /* GPEffectManager.h */,
+				84B02350277C713D0064B00A /* GPEffectManager.m */,
+				84B02352277C71C30064B00A /* Bridging-Header.h */,
 			);
 			path = GapoEffectTest;
+			sourceTree = "<group>";
+		};
+		84B021D7277C69880064B00A /* include */ = {
+			isa = PBXGroup;
+			children = (
+				84B021D8277C69880064B00A /* BytedEffectSDK */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		84B021D8277C69880064B00A /* BytedEffectSDK */ = {
+			isa = PBXGroup;
+			children = (
+				84B021D9277C69880064B00A /* bef_effect_ai_foot.h */,
+				84B021DA277C69880064B00A /* bef_effect_ai_gaze_estimation.h */,
+				84B021DB277C69880064B00A /* bef_effect_ai_api_advanced.h */,
+				84B021DC277C69880064B00A /* RenderMsgDelegate.h */,
+				84B021DD277C69880064B00A /* bef_effect_ai_lightcls.h */,
+				84B021DE277C69880064B00A /* bef_effect_ai_c2.h */,
+				84B021DF277C69880064B00A /* bef_effect_ai_skin_segmentation.h */,
+				84B021E0277C69880064B00A /* bef_effect_ai_message_define.h */,
+				84B021E1277C69880064B00A /* BytedLicenseDefine.h */,
+				84B021E2277C69880064B00A /* bef_effect_ai_headseg.h */,
+				84B021E3277C69880064B00A /* bef_effect_ai_animoji.h */,
+				84B021E4277C69880064B00A /* bef_effect_ai_public_define.h */,
+				84B021E5277C69880064B00A /* bef_effect_ai_dynamic_gesture.h */,
+				84B021E6277C69880064B00A /* bef_effect_ai_qrcode_decode.h */,
+				84B021E7277C69880064B00A /* bef_effect_ai_face_clustering.h */,
+				84B021E8277C69880064B00A /* bef_effect_ai_license_parser.h */,
+				84B021E9277C69880064B00A /* bef_ai_image_quality_enhancement_adaptive_sharpen.h */,
+				84B021EA277C69880064B00A /* bef_effect_ai_c1.h */,
+				84B021EB277C69880064B00A /* bef_effect_ai_face_verify.h */,
+				84B021EC277C69880064B00A /* byted_effect_ai_pixelformat_cvt.h */,
+				84B021ED277C69880064B00A /* bef_effect_ai_license_wrapper.h */,
+				84B021EE277C69880064B00A /* bef_effect_ai_pet_face.h */,
+				84B021EF277C69880064B00A /* bef_effect_ai_dynamic_action.h */,
+				84B021F0277C69880064B00A /* bef_effect_ai_yuv_process.h */,
+				84B021F1277C69880064B00A /* bef_effect_ai_error_code_format.h */,
+				84B021F2277C69880064B00A /* bef_ai_image_quality_enhancement_public_define.h */,
+				84B021F3277C69880064B00A /* bef_ai_image_quality_enhancement_video_sr.h */,
+				84B021F4277C69880064B00A /* bef_effect_ai_online_license.h */,
+				84B021F5277C69880064B00A /* bef_effect_ai_hand.h */,
+				84B021F6277C69880064B00A /* bef_effect_ai_student_id_ocr.h */,
+				84B021F7277C69880064B00A /* bef_effect_ai_api.h */,
+				84B021F8277C69880064B00A /* bef_effect_ai_general_object.h */,
+				84B021F9277C69880064B00A /* bef_effect_ai_video_cls.h */,
+				84B021FA277C69880064B00A /* bef_effect_ai_portrait_matting.h */,
+				84B021FB277C69880064B00A /* bef_effect_ai_face_attribute.h */,
+				84B021FC277C69880064B00A /* bef_effect_ai_chroma_keying.h */,
+				84B021FD277C69880064B00A /* bef_effect_ai_human_distance.h */,
+				84B021FE277C69880064B00A /* bef_effect_ai_version.h */,
+				84B021FF277C69880064B00A /* bef_effect_ai_car_detect.h */,
+				84B02200277C69880064B00A /* bef_effect_ai_skeleton.h */,
+				84B02201277C69880064B00A /* bef_effect_ai_skyseg.h */,
+				84B02202277C69880064B00A /* bef_effect_ai_action_recognition.h */,
+				84B02203277C69880064B00A /* bef_effect_ai_face_detect.h */,
+				84B02204277C69880064B00A /* bef_effect_ai_hairparser.h */,
+				84B02205277C69880064B00A /* bef_ai_image_quality_enhancement_night_scene.h */,
+				84B02206277C69880064B00A /* bef_effect_ai_bach_skeleton.h */,
+			);
+			path = BytedEffectSDK;
+			sourceTree = "<group>";
+		};
+		84B02208277C69890064B00A /* BytePlusResource */ = {
+			isa = PBXGroup;
+			children = (
+				84B02209277C69890064B00A /* ModelResource.bundle */,
+				84B0220A277C69890064B00A /* ComposeMakeup.bundle */,
+				84B0220B277C69890064B00A /* LicenseBag.bundle */,
+			);
+			path = BytePlusResource;
+			sourceTree = "<group>";
+		};
+		84B0220C277C69890064B00A /* BytePlusFiles */ = {
+			isa = PBXGroup;
+			children = (
+				84B0220D277C69890064B00A /* Core */,
+			);
+			path = BytePlusFiles;
+			sourceTree = "<group>";
+		};
+		84B0220D277C69890064B00A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				84B0220E277C69890064B00A /* Core.h */,
+				84B0220F277C69890064B00A /* License */,
+				84B02214277C69890064B00A /* Config.h */,
+				84B02215277C69890064B00A /* macro.h */,
+				84B02216277C69890064B00A /* Effect */,
+				84B0221B277C69890064B00A /* Utils */,
+				84B02226277C69890064B00A /* Algorithm */,
+				84B02263277C698A0064B00A /* Lens */,
+				84B0226E277C698A0064B00A /* Avatar */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		84B0220F277C69890064B00A /* License */ = {
+			isa = PBXGroup;
+			children = (
+				84B02210277C69890064B00A /* BELicenseHelper.mm */,
+				84B02211277C69890064B00A /* BELicenseHelper.h */,
+				84B02212277C69890064B00A /* BEHttpRequestProvider.h */,
+				84B02213277C69890064B00A /* BEHttpRequestProvider.mm */,
+			);
+			path = License;
+			sourceTree = "<group>";
+		};
+		84B02216277C69890064B00A /* Effect */ = {
+			isa = PBXGroup;
+			children = (
+				84B02217277C69890064B00A /* BEEffectManager.m */,
+				84B02218277C69890064B00A /* BEEffectResourceHelper.m */,
+				84B02219277C69890064B00A /* BEEffectManager.h */,
+				84B0221A277C69890064B00A /* BEEffectResourceHelper.h */,
+			);
+			path = Effect;
+			sourceTree = "<group>";
+		};
+		84B0221B277C69890064B00A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				84B0221C277C69890064B00A /* BEOpenGLRenderHelper.m */,
+				84B0221D277C69890064B00A /* BECommonUtils.h */,
+				84B0221E277C69890064B00A /* BEGLTexture.h */,
+				84B0221F277C69890064B00A /* BETimeRecoder.m */,
+				84B02220277C69890064B00A /* BEImageUtils.h */,
+				84B02221277C69890064B00A /* BEOpenGLRenderHelper.h */,
+				84B02222277C69890064B00A /* BEGLTexture.m */,
+				84B02223277C69890064B00A /* BECommonUtils.m */,
+				84B02224277C69890064B00A /* BEImageUtils.m */,
+				84B02225277C69890064B00A /* BETimeRecoder.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		84B02226277C69890064B00A /* Algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				84B02227277C69890064B00A /* BEAlgorithmResourceHelper.h */,
+				84B02228277C69890064B00A /* Task */,
+				84B0225B277C698A0064B00A /* BEAlgorithmResourceHelper.m */,
+				84B0225C277C698A0064B00A /* Base */,
+			);
+			path = Algorithm;
+			sourceTree = "<group>";
+		};
+		84B02228277C69890064B00A /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				84B02229277C69890064B00A /* BESkeletonAlgorithmTask.h */,
+				84B0222A277C69890064B00A /* BEHandAlgorithmTask.m */,
+				84B0222B277C69890064B00A /* BECarDetectTask.m */,
+				84B0222C277C69890064B00A /* BEC1AlgorithmTask.h */,
+				84B0222D277C69890064B00A /* BEChromaKeyingAlgorithmTask.m */,
+				84B0222E277C69890064B00A /* BEHairParserAlgorithmTask.m */,
+				84B0222F277C69890064B00A /* BEBachSkeletonAlgorithmTask.m */,
+				84B02230277C69890064B00A /* BEStudentIdOcrTask.m */,
+				84B02231277C69890064B00A /* BEPetFaceAlgorithmTask.m */,
+				84B02232277C69890064B00A /* BEPortraitMattingAlgorithmTask.m */,
+				84B02233277C69890064B00A /* BELightClsAlgorithmTask.h */,
+				84B02234277C69890064B00A /* BEActionRecognitionAlgorithmTask.h */,
+				84B02235277C69890064B00A /* BEFaceClusterAlgorithmTask.h */,
+				84B02236277C69890064B00A /* BESkySegAlgorithmTask.h */,
+				84B02237277C69890064B00A /* BEDynamicGestureAlgorithmTask.m */,
+				84B02238277C69890064B00A /* BEGazeEstimationTask.h */,
+				84B02239277C69890064B00A /* BEHeadSegmentAlgorithmTask.m */,
+				84B0223A277C69890064B00A /* BEHumanDistanceAlgorithmTask.m */,
+				84B0223B277C69890064B00A /* BEC2AlgorithmTask.h */,
+				84B0223C277C69890064B00A /* BEFaceAlgorithmTask.m */,
+				84B0223D277C69890064B00A /* BEConcentrationTask.h */,
+				84B0223E277C69890064B00A /* BEFaceVerifyAlgorithmTask.m */,
+				84B0223F277C69890064B00A /* BESkinSegmentationAlgorithmTask.m */,
+				84B02240277C69890064B00A /* BEVideoClsAlgorithmTask.m */,
+				84B02241277C69890064B00A /* BEAnimojiAlgorithmTask.m */,
+				84B02242277C69890064B00A /* BEChromaKeyingAlgorithmTask.h */,
+				84B02243277C69890064B00A /* BEC1AlgorithmTask.m */,
+				84B02244277C698A0064B00A /* BECarDetectTask.h */,
+				84B02245277C698A0064B00A /* BEHandAlgorithmTask.h */,
+				84B02246277C698A0064B00A /* BESkeletonAlgorithmTask.m */,
+				84B02247277C698A0064B00A /* BEFaceClusterAlgorithmTask.mm */,
+				84B02248277C698A0064B00A /* BEBachSkeletonAlgorithmTask.h */,
+				84B02249277C698A0064B00A /* BEStudentIdOcrTask.h */,
+				84B0224A277C698A0064B00A /* BEHairParserAlgorithmTask.h */,
+				84B0224B277C698A0064B00A /* BEFaceAlgorithmTask.h */,
+				84B0224C277C698A0064B00A /* BEHumanDistanceAlgorithmTask.h */,
+				84B0224D277C698A0064B00A /* BEC2AlgorithmTask.m */,
+				84B0224E277C698A0064B00A /* BEHeadSegmentAlgorithmTask.h */,
+				84B0224F277C698A0064B00A /* BEGazeEstimationTask.m */,
+				84B02250277C698A0064B00A /* BESkySegAlgorithmTask.m */,
+				84B02251277C698A0064B00A /* BEDynamicGestureAlgorithmTask.h */,
+				84B02252277C698A0064B00A /* BEActionRecognitionAlgorithmTask.m */,
+				84B02253277C698A0064B00A /* BELightClsAlgorithmTask.m */,
+				84B02254277C698A0064B00A /* BEPortraitMattingAlgorithmTask.h */,
+				84B02255277C698A0064B00A /* BEPetFaceAlgorithmTask.h */,
+				84B02256277C698A0064B00A /* BEAnimojiAlgorithmTask.h */,
+				84B02257277C698A0064B00A /* BEVideoClsAlgorithmTask.h */,
+				84B02258277C698A0064B00A /* BESkinSegmentationAlgorithmTask.h */,
+				84B02259277C698A0064B00A /* BEFaceVerifyAlgorithmTask.h */,
+				84B0225A277C698A0064B00A /* BEConcentrationTask.m */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
+		84B0225C277C698A0064B00A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				84B0225D277C698A0064B00A /* BEAlgorithmTask.m */,
+				84B0225E277C698A0064B00A /* BEAlgorithmKey.h */,
+				84B0225F277C698A0064B00A /* BEAlgorithmTaskFactory.h */,
+				84B02260277C698A0064B00A /* BEAlgorithmTask.h */,
+				84B02261277C698A0064B00A /* BEAlgorithmKey.m */,
+				84B02262277C698A0064B00A /* BEAlgorithmTaskFactory.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		84B02263277C698A0064B00A /* Lens */ = {
+			isa = PBXGroup;
+			children = (
+				84B02264277C698A0064B00A /* BEAdaptiveSharpenTask.m */,
+				84B02265277C698A0064B00A /* BEImageOpeartion.m */,
+				84B02266277C698A0064B00A /* BELensResourceHelper.h */,
+				84B02267277C698A0064B00A /* BEVideoSRTask.h */,
+				84B02268277C698A0064B00A /* BEImageQualityProcessManager.h */,
+				84B02269277C698A0064B00A /* BEVideoSRTask.m */,
+				84B0226A277C698A0064B00A /* BELensResourceHelper.m */,
+				84B0226B277C698A0064B00A /* BEImageOpeartion.h */,
+				84B0226C277C698A0064B00A /* BEAdaptiveSharpenTask.h */,
+				84B0226D277C698A0064B00A /* BEImageQualityProcessManager.m */,
+			);
+			path = Lens;
+			sourceTree = "<group>";
+		};
+		84B0226E277C698A0064B00A /* Avatar */ = {
+			isa = PBXGroup;
+			children = (
+				84B0226F277C698A0064B00A /* BEAvatarManager.h */,
+				84B02270277C698A0064B00A /* BEAvatarManager.m */,
+			);
+			path = Avatar;
+			sourceTree = "<group>";
+		};
+		A21EA55CDFE8E03B6363A980 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8941D7843778531A1BC1F364 /* Pods_GapoEffectTest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +548,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84B021D2277C68B00064B00A /* Build configuration list for PBXNativeTarget "GapoEffectTest" */;
 			buildPhases = (
+				26D5E145623FD72FDE1EE6DA /* [CP] Check Pods Manifest.lock */,
 				84B021BA277C68AE0064B00A /* Sources */,
 				84B021BB277C68AE0064B00A /* Frameworks */,
 				84B021BC277C68AE0064B00A /* Resources */,
+				0C9D44C2F16F5FC12735A0C9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,22 +601,116 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B022E8277C698A0064B00A /* gapo_test_20211223_20220107_vn.gapo.app_4.2.3.licbag in Resources */,
+				84B022EA277C698A0064B00A /* ComposeMakeup.bundle in Resources */,
 				84B021CE277C68B00064B00A /* LaunchScreen.storyboard in Resources */,
+				84B022E6277C698A0064B00A /* BytedEffectSDK.podspec in Resources */,
+				84B0234C277C6A2E0064B00A /* DemoViewController.xib in Resources */,
 				84B021CB277C68B00064B00A /* Assets.xcassets in Resources */,
 				84B021C9277C68AE0064B00A /* Main.storyboard in Resources */,
+				84B022EB277C698A0064B00A /* LicenseBag.bundle in Resources */,
+				84B022E9277C698A0064B00A /* ModelResource.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C9D44C2F16F5FC12735A0C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GapoEffectTest/Pods-GapoEffectTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GapoEffectTest/Pods-GapoEffectTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GapoEffectTest/Pods-GapoEffectTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		26D5E145623FD72FDE1EE6DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GapoEffectTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		84B021BA277C68AE0064B00A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B022FF277C698A0064B00A /* BEHumanDistanceAlgorithmTask.m in Sources */,
+				84B022F7277C698A0064B00A /* BEChromaKeyingAlgorithmTask.m in Sources */,
+				84B02314277C698A0064B00A /* BEVideoSRTask.m in Sources */,
+				84B022F4277C698A0064B00A /* BEImageUtils.m in Sources */,
+				84B02301277C698A0064B00A /* BEFaceVerifyAlgorithmTask.m in Sources */,
+				84B02303277C698A0064B00A /* BEVideoClsAlgorithmTask.m in Sources */,
+				84B02315277C698A0064B00A /* BELensResourceHelper.m in Sources */,
+				84B022FC277C698A0064B00A /* BEPortraitMattingAlgorithmTask.m in Sources */,
 				84B021C6277C68AE0064B00A /* ViewController.swift in Sources */,
+				84B02304277C698A0064B00A /* BEAnimojiAlgorithmTask.m in Sources */,
+				84B0230E277C698A0064B00A /* BEAlgorithmResourceHelper.m in Sources */,
+				84B022F3277C698A0064B00A /* BECommonUtils.m in Sources */,
+				84B02313277C698A0064B00A /* BEImageOpeartion.m in Sources */,
+				84B02351277C713D0064B00A /* GPEffectManager.m in Sources */,
+				84B02307277C698A0064B00A /* BEFaceClusterAlgorithmTask.mm in Sources */,
+				84B022F2277C698A0064B00A /* BEGLTexture.m in Sources */,
+				84B022FE277C698A0064B00A /* BEHeadSegmentAlgorithmTask.m in Sources */,
+				84B02310277C698A0064B00A /* BEAlgorithmKey.m in Sources */,
+				84B0230F277C698A0064B00A /* BEAlgorithmTask.m in Sources */,
+				84B022EC277C698A0064B00A /* BELicenseHelper.mm in Sources */,
+				84B0230D277C698A0064B00A /* BEConcentrationTask.m in Sources */,
+				84B0230A277C698A0064B00A /* BESkySegAlgorithmTask.m in Sources */,
+				84B02317277C698A0064B00A /* BEAvatarManager.m in Sources */,
 				84B021C2277C68AE0064B00A /* AppDelegate.swift in Sources */,
-				84B021C4277C68AE0064B00A /* SceneDelegate.swift in Sources */,
+				84B022F0277C698A0064B00A /* BEOpenGLRenderHelper.m in Sources */,
+				84B02311277C698A0064B00A /* BEAlgorithmTaskFactory.m in Sources */,
+				84B02309277C698A0064B00A /* BEGazeEstimationTask.m in Sources */,
+				84B0234B277C6A2E0064B00A /* DemoViewController.swift in Sources */,
+				84B0230B277C698A0064B00A /* BEActionRecognitionAlgorithmTask.m in Sources */,
+				84B022F1277C698A0064B00A /* BETimeRecoder.m in Sources */,
+				84B02300277C698A0064B00A /* BEFaceAlgorithmTask.m in Sources */,
+				84B022F5277C698A0064B00A /* BEHandAlgorithmTask.m in Sources */,
+				84B022FB277C698A0064B00A /* BEPetFaceAlgorithmTask.m in Sources */,
+				84B022EF277C698A0064B00A /* BEEffectResourceHelper.m in Sources */,
+				84B02316277C698A0064B00A /* BEImageQualityProcessManager.m in Sources */,
+				84B02306277C698A0064B00A /* BESkeletonAlgorithmTask.m in Sources */,
+				84B02305277C698A0064B00A /* BEC1AlgorithmTask.m in Sources */,
+				84B02302277C698A0064B00A /* BESkinSegmentationAlgorithmTask.m in Sources */,
+				84B022F6277C698A0064B00A /* BECarDetectTask.m in Sources */,
+				84B022F9277C698A0064B00A /* BEBachSkeletonAlgorithmTask.m in Sources */,
+				84B022FA277C698A0064B00A /* BEStudentIdOcrTask.m in Sources */,
+				84B02308277C698A0064B00A /* BEC2AlgorithmTask.m in Sources */,
+				84B022EE277C698A0064B00A /* BEEffectManager.m in Sources */,
+				84B0234E277C707F0064B00A /* LivestreamEffect.swift in Sources */,
+				84B0230C277C698A0064B00A /* BELightClsAlgorithmTask.m in Sources */,
+				84B022F8277C698A0064B00A /* BEHairParserAlgorithmTask.m in Sources */,
+				84B022ED277C698A0064B00A /* BEHttpRequestProvider.mm in Sources */,
+				84B022FD277C698A0064B00A /* BEDynamicGestureAlgorithmTask.m in Sources */,
+				84B02312277C698A0064B00A /* BEAdaptiveSharpenTask.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +787,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +842,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -284,57 +854,77 @@
 		};
 		84B021D3277C68B00064B00A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7449C9A50F9A78E18FA285DB /* Pods-GapoEffectTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 637969XVJN;
+				ENABLE_BITCODE = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GapoEffectTest/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Điều này cho phép bạn chụp ảnh, thực hiện cuộc gọi video và v.v. trong ứng dụng";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Điều này cho phép bạn quay video có âm thanh, thực hiện cuộc gọi thoại và video v.v.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = GAPO.GapoEffectTest;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.gapo.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "GapoEffectTest/Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		84B021D4277C68B00064B00A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35BC5547AE5E5BC525D4984F /* Pods-GapoEffectTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 637969XVJN;
+				ENABLE_BITCODE = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GapoEffectTest/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Điều này cho phép bạn chụp ảnh, thực hiện cuộc gọi video và v.v. trong ứng dụng";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Điều này cho phép bạn quay video có âm thanh, thực hiện cuộc gọi thoại và video v.v.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = GAPO.GapoEffectTest;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.gapo.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "GapoEffectTest/Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -1,0 +1,6 @@
+framework module Pods_GapoEffectTest {
+  umbrella header "Pods-GapoEffectTest-umbrella.h"
+
+  export *
+  module * { export * }
+}
