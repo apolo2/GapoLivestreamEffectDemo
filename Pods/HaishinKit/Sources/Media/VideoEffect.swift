@@ -1,6 +1,7 @@
 import AVFoundation
 import CoreImage
 import Foundation
+import CoreVideo
 
 open class VideoEffect: NSObject {
     open var ciContext: CIContext?

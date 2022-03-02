@@ -40,5 +40,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
+    
+    func resetScreen() {
+        window?.rootViewController = DemoViewController()
+    }
 }
 

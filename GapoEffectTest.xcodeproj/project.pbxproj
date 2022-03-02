@@ -8,16 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		346076BA1405B54CFDB4182E /* Pods_GapoEffectTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8941D7843778531A1BC1F364 /* Pods_GapoEffectTest.framework */; };
+		848889E227CF68F300CEAF43 /* LicenseBag.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 848889DF27CF68F100CEAF43 /* LicenseBag.bundle */; };
+		848889E327CF68F300CEAF43 /* ModelResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 848889E027CF68F200CEAF43 /* ModelResource.bundle */; };
+		848889E427CF68F300CEAF43 /* ComposeMakeup.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 848889E127CF68F300CEAF43 /* ComposeMakeup.bundle */; };
+		848889E627CF691D00CEAF43 /* gapo_20211230_20221229_vn.gapo.app_4.2.3.licbag in Resources */ = {isa = PBXBuildFile; fileRef = 848889E527CF691D00CEAF43 /* gapo_20211230_20221229_vn.gapo.app_4.2.3.licbag */; };
+		848889EA27CF6C2700CEAF43 /* BindingOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848889E927CF6C2700CEAF43 /* BindingOperators.swift */; };
+		848889EC27CF6CF800CEAF43 /* UIView+Bounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848889EB27CF6CF800CEAF43 /* UIView+Bounds.swift */; };
 		84B021C2277C68AE0064B00A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B021C1277C68AE0064B00A /* AppDelegate.swift */; };
 		84B021C6277C68AE0064B00A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B021C5277C68AE0064B00A /* ViewController.swift */; };
 		84B021C9277C68AE0064B00A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B021C7277C68AE0064B00A /* Main.storyboard */; };
 		84B021CB277C68B00064B00A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B021CA277C68B00064B00A /* Assets.xcassets */; };
 		84B021CE277C68B00064B00A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B021CC277C68B00064B00A /* LaunchScreen.storyboard */; };
 		84B022E6277C698A0064B00A /* BytedEffectSDK.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 84B021D5277C69840064B00A /* BytedEffectSDK.podspec */; };
-		84B022E8277C698A0064B00A /* gapo_test_20211223_20220107_vn.gapo.app_4.2.3.licbag in Resources */ = {isa = PBXBuildFile; fileRef = 84B02207277C69880064B00A /* gapo_test_20211223_20220107_vn.gapo.app_4.2.3.licbag */; };
-		84B022E9277C698A0064B00A /* ModelResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84B02209277C69890064B00A /* ModelResource.bundle */; };
-		84B022EA277C698A0064B00A /* ComposeMakeup.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84B0220A277C69890064B00A /* ComposeMakeup.bundle */; };
-		84B022EB277C698A0064B00A /* LicenseBag.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84B0220B277C69890064B00A /* LicenseBag.bundle */; };
 		84B022EC277C698A0064B00A /* BELicenseHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84B02210277C69890064B00A /* BELicenseHelper.mm */; };
 		84B022ED277C698A0064B00A /* BEHttpRequestProvider.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84B02213277C69890064B00A /* BEHttpRequestProvider.mm */; };
 		84B022EE277C698A0064B00A /* BEEffectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B02217277C69890064B00A /* BEEffectManager.m */; };
@@ -71,6 +73,12 @@
 /* Begin PBXFileReference section */
 		35BC5547AE5E5BC525D4984F /* Pods-GapoEffectTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GapoEffectTest.release.xcconfig"; path = "Target Support Files/Pods-GapoEffectTest/Pods-GapoEffectTest.release.xcconfig"; sourceTree = "<group>"; };
 		7449C9A50F9A78E18FA285DB /* Pods-GapoEffectTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GapoEffectTest.debug.xcconfig"; path = "Target Support Files/Pods-GapoEffectTest/Pods-GapoEffectTest.debug.xcconfig"; sourceTree = "<group>"; };
+		848889DF27CF68F100CEAF43 /* LicenseBag.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LicenseBag.bundle; sourceTree = "<group>"; };
+		848889E027CF68F200CEAF43 /* ModelResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ModelResource.bundle; sourceTree = "<group>"; };
+		848889E127CF68F300CEAF43 /* ComposeMakeup.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ComposeMakeup.bundle; sourceTree = "<group>"; };
+		848889E527CF691D00CEAF43 /* gapo_20211230_20221229_vn.gapo.app_4.2.3.licbag */ = {isa = PBXFileReference; lastKnownFileType = file; path = gapo_20211230_20221229_vn.gapo.app_4.2.3.licbag; sourceTree = "<group>"; };
+		848889E927CF6C2700CEAF43 /* BindingOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindingOperators.swift; sourceTree = "<group>"; };
+		848889EB27CF6CF800CEAF43 /* UIView+Bounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Bounds.swift"; sourceTree = "<group>"; };
 		84B021BE277C68AE0064B00A /* GapoEffectTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GapoEffectTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B021C1277C68AE0064B00A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84B021C5277C68AE0064B00A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -125,10 +133,6 @@
 		84B02204277C69880064B00A /* bef_effect_ai_hairparser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_hairparser.h; sourceTree = "<group>"; };
 		84B02205277C69880064B00A /* bef_ai_image_quality_enhancement_night_scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_ai_image_quality_enhancement_night_scene.h; sourceTree = "<group>"; };
 		84B02206277C69880064B00A /* bef_effect_ai_bach_skeleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bef_effect_ai_bach_skeleton.h; sourceTree = "<group>"; };
-		84B02207277C69880064B00A /* gapo_test_20211223_20220107_vn.gapo.app_4.2.3.licbag */ = {isa = PBXFileReference; lastKnownFileType = file; path = gapo_test_20211223_20220107_vn.gapo.app_4.2.3.licbag; sourceTree = "<group>"; };
-		84B02209277C69890064B00A /* ModelResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ModelResource.bundle; sourceTree = "<group>"; };
-		84B0220A277C69890064B00A /* ComposeMakeup.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ComposeMakeup.bundle; sourceTree = "<group>"; };
-		84B0220B277C69890064B00A /* LicenseBag.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LicenseBag.bundle; sourceTree = "<group>"; };
 		84B0220E277C69890064B00A /* Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		84B02210277C69890064B00A /* BELicenseHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BELicenseHelper.mm; sourceTree = "<group>"; };
 		84B02211277C69890064B00A /* BELicenseHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BELicenseHelper.h; sourceTree = "<group>"; };
@@ -254,7 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				84B021D5277C69840064B00A /* BytedEffectSDK.podspec */,
-				84B02207277C69880064B00A /* gapo_test_20211223_20220107_vn.gapo.app_4.2.3.licbag */,
+				848889E527CF691D00CEAF43 /* gapo_20211230_20221229_vn.gapo.app_4.2.3.licbag */,
 				84B0220C277C69890064B00A /* BytePlusFiles */,
 				84B02208277C69890064B00A /* BytePlusResource */,
 				84B021D7277C69880064B00A /* include */,
@@ -287,6 +291,8 @@
 				84B0234D277C707F0064B00A /* LivestreamEffect.swift */,
 				84B0234F277C713D0064B00A /* GPEffectManager.h */,
 				84B02350277C713D0064B00A /* GPEffectManager.m */,
+				848889E927CF6C2700CEAF43 /* BindingOperators.swift */,
+				848889EB27CF6CF800CEAF43 /* UIView+Bounds.swift */,
 				84B02352277C71C30064B00A /* Bridging-Header.h */,
 			);
 			path = GapoEffectTest;
@@ -356,9 +362,9 @@
 		84B02208277C69890064B00A /* BytePlusResource */ = {
 			isa = PBXGroup;
 			children = (
-				84B02209277C69890064B00A /* ModelResource.bundle */,
-				84B0220A277C69890064B00A /* ComposeMakeup.bundle */,
-				84B0220B277C69890064B00A /* LicenseBag.bundle */,
+				848889E127CF68F300CEAF43 /* ComposeMakeup.bundle */,
+				848889DF27CF68F100CEAF43 /* LicenseBag.bundle */,
+				848889E027CF68F200CEAF43 /* ModelResource.bundle */,
 			);
 			path = BytePlusResource;
 			sourceTree = "<group>";
@@ -601,15 +607,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84B022E8277C698A0064B00A /* gapo_test_20211223_20220107_vn.gapo.app_4.2.3.licbag in Resources */,
-				84B022EA277C698A0064B00A /* ComposeMakeup.bundle in Resources */,
+				848889E627CF691D00CEAF43 /* gapo_20211230_20221229_vn.gapo.app_4.2.3.licbag in Resources */,
+				848889E227CF68F300CEAF43 /* LicenseBag.bundle in Resources */,
 				84B021CE277C68B00064B00A /* LaunchScreen.storyboard in Resources */,
 				84B022E6277C698A0064B00A /* BytedEffectSDK.podspec in Resources */,
 				84B0234C277C6A2E0064B00A /* DemoViewController.xib in Resources */,
+				848889E427CF68F300CEAF43 /* ComposeMakeup.bundle in Resources */,
+				848889E327CF68F300CEAF43 /* ModelResource.bundle in Resources */,
 				84B021CB277C68B00064B00A /* Assets.xcassets in Resources */,
 				84B021C9277C68AE0064B00A /* Main.storyboard in Resources */,
-				84B022EB277C698A0064B00A /* LicenseBag.bundle in Resources */,
-				84B022E9277C698A0064B00A /* ModelResource.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -668,7 +674,9 @@
 				84B022F4277C698A0064B00A /* BEImageUtils.m in Sources */,
 				84B02301277C698A0064B00A /* BEFaceVerifyAlgorithmTask.m in Sources */,
 				84B02303277C698A0064B00A /* BEVideoClsAlgorithmTask.m in Sources */,
+				848889EC27CF6CF800CEAF43 /* UIView+Bounds.swift in Sources */,
 				84B02315277C698A0064B00A /* BELensResourceHelper.m in Sources */,
+				848889EA27CF6C2700CEAF43 /* BindingOperators.swift in Sources */,
 				84B022FC277C698A0064B00A /* BEPortraitMattingAlgorithmTask.m in Sources */,
 				84B021C6277C68AE0064B00A /* ViewController.swift in Sources */,
 				84B02304277C698A0064B00A /* BEAnimojiAlgorithmTask.m in Sources */,

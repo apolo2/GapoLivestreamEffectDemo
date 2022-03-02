@@ -9,17 +9,27 @@ import UIKit
 import HaishinKit
 import AVFoundation
 import PureLayout
+import RxKeyboard
+import RxSwift
+import RxCocoa
+import RxGesture
 
 let sampleRate: Double = 44100.0
 
 class DemoViewController: UIViewController {
 
     @IBOutlet weak var liveView: GLHKView!
+    @IBOutlet weak var buttonsStack: UIStackView!
+    @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var textViewBottomConstraint: NSLayoutConstraint!
+    
     var rtmpConnection = RTMPConnection()
     var rtmpStream: RTMPStream!
     private var currentEffect: VideoEffect?
     private var currentPosition: AVCaptureDevice.Position = .front
     static var glContext: EAGLContext?
+    
+    var disposeBag: DisposeBag? = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +39,8 @@ class DemoViewController: UIViewController {
         requestCameraAccess()
         requestMicrophoneAccess()
         setupRtmp()
+        bindKeyboardDidChange()
+        bindViewTapGesture()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -76,6 +88,7 @@ class DemoViewController: UIViewController {
         if let effect = currentEffect {
             _ = rtmpStream?.unregisterVideoEffect(effect)
         }
+        GPEffectManager.shared().update()
         let beauty = BeautyEffect()
         _ = rtmpStream?.registerVideoEffect(beauty)
         currentEffect = beauty
@@ -95,5 +108,37 @@ class DemoViewController: UIViewController {
             _ = rtmpStream?.unregisterVideoEffect(effect)
         }
         currentEffect = nil
+    }
+    
+    @IBAction func resetScreen() {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        appDelegate.resetScreen()
+    }
+    
+    func hideKeyboard() {
+        textView.resignFirstResponder()
+    }
+    
+    // MARK: Bindings
+    func bindKeyboardDidChange() {
+        RxKeyboard.instance.visibleHeight
+        .drive(onNext: { [weak self] height in
+            guard let self = self else { return }
+            if height > 0 && !self.textView.isFirstResponder { return }
+            
+            let textViewBottom = height - (self.view.height - self.buttonsStack.top) + 8
+            self.textViewBottomConstraint.constant = max(textViewBottom, 32)
+            self.view.setNeedsLayout()
+            UIView.animate(withDuration: 0) {
+                self.view.layoutIfNeeded()
+            }
+        }) => disposeBag
+    }
+    
+    func bindViewTapGesture() {
+        liveView.rx.tapGesture()
+            .subscribe(onNext: { [weak self] gesture in
+                self?.hideKeyboard()
+            }) => disposeBag
     }
 }

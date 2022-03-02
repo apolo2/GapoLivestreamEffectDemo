@@ -8,6 +8,10 @@ target 'GapoEffectTest' do
   pod 'BytedEffectSDK', :path => './'
   pod 'HaishinKit', :git => 'https://github.com/apolo2/HaishinKit.swift.git', :branch => 'updates-from-original'
   pod 'PureLayout'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxKeyboard'
+  pod 'RxGesture'
   
   # Pods for GapoEffectTest
 

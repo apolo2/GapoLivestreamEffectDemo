@@ -11,7 +11,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DemoViewController" customModule="GapoEffectTest" customModuleProvider="target">
             <connections>
+                <outlet property="buttonsStack" destination="Bqd-ci-XsH" id="X4A-mi-DqB"/>
                 <outlet property="liveView" destination="SCh-9R-scM" id="R7J-3H-lVJ"/>
+                <outlet property="textView" destination="853-Gm-3Ar" id="j89-hw-wGK"/>
+                <outlet property="textViewBottomConstraint" destination="GAj-eJ-99i" id="Z3a-iS-f1K"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -28,7 +31,7 @@
                     <rect key="frame" x="12" y="810" width="390" height="40"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5EA-tI-E2E">
-                            <rect key="frame" x="0.0" y="0.0" width="122" height="40"/>
+                            <rect key="frame" x="0.0" y="0.0" width="88.5" height="40"/>
                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="Beauty">
@@ -39,7 +42,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kcq-bU-eXz">
-                            <rect key="frame" x="134" y="0.0" width="122" height="40"/>
+                            <rect key="frame" x="100.5" y="0.0" width="88.5" height="40"/>
                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="Mono chrome">
@@ -50,7 +53,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmF-Ap-NwE">
-                            <rect key="frame" x="268" y="0.0" width="122" height="40"/>
+                            <rect key="frame" x="201" y="0.0" width="88.5" height="40"/>
                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="None">
@@ -60,28 +63,56 @@
                                 <action selector="noneEffectAction" destination="-1" eventType="touchUpInside" id="WmG-Uy-zAc"/>
                             </connections>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pU0-A2-UWk">
+                            <rect key="frame" x="301.5" y="0.0" width="88.5" height="40"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Reset">
+                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="resetScreen" destination="-1" eventType="touchUpInside" id="2Y5-57-Mk4"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="hxQ-aI-NAn"/>
                     </constraints>
                 </stackView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="853-Gm-3Ar">
+                    <rect key="frame" x="8" y="658" width="398" height="120"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="wi5-tt-aWj"/>
+                    </constraints>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea </string>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="853-Gm-3Ar" secondAttribute="trailing" constant="8" id="21K-ir-UTB"/>
                 <constraint firstItem="SCh-9R-scM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2YR-Qy-Z3g"/>
                 <constraint firstItem="SCh-9R-scM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="C6W-p6-Lv3"/>
+                <constraint firstItem="Bqd-ci-XsH" firstAttribute="top" secondItem="853-Gm-3Ar" secondAttribute="bottom" constant="32" id="GAj-eJ-99i"/>
+                <constraint firstItem="853-Gm-3Ar" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="Mz2-pX-uli"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SCh-9R-scM" secondAttribute="trailing" id="bnO-6f-Nqp"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Bqd-ci-XsH" secondAttribute="trailing" constant="12" id="cyr-Zr-mXg"/>
                 <constraint firstAttribute="bottom" secondItem="SCh-9R-scM" secondAttribute="bottom" id="oM3-Kg-yru"/>
                 <constraint firstItem="Bqd-ci-XsH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="rvo-mp-KUX"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Bqd-ci-XsH" secondAttribute="bottom" constant="12" id="xMF-U8-osX"/>
             </constraints>
-            <point key="canvasLocation" x="139" y="90"/>
+            <point key="canvasLocation" x="137.68115942028987" y="89.732142857142847"/>
         </view>
     </objects>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

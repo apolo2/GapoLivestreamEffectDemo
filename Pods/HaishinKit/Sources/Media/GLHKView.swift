@@ -44,13 +44,13 @@ open class GLHKView: GLKView, NetStreamRenderer {
     }
 
     override public init(frame: CGRect) {
-        super.init(frame: frame, context: EAGLContext(api: .openGLES2)!)
+        super.init(frame: frame, context: EAGLContext(api: .openGLES3)!)
         awakeFromNib()
     }
 
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        self.context = EAGLContext(api: .openGLES2)!
+        self.context = EAGLContext(api: .openGLES3)!
     }
 
     override open func awakeFromNib() {
@@ -76,7 +76,8 @@ open class GLHKView: GLKView, NetStreamRenderer {
 extension GLHKView: GLKViewDelegate {
     // MARK: GLKViewDelegate
     public func glkView(_ view: GLKView, drawIn rect: CGRect) {
-        glClear(GLbitfield(GL_COLOR_BUFFER_BIT))
+        glClearColor(0.0, 0.0, 0.0, 0.0)
+        glClear(GLbitfield(GL_COLOR_BUFFER_BIT) | GLbitfield(GL_DEPTH_BUFFER_BIT))
         guard var displayImage: CIImage = displayImage else {
             return
         }

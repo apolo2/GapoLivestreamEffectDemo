@@ -36,7 +36,7 @@ static GPEffectManager *_shared;
 
 - (void)updateEffectManager {
     self.manager.frontCamera = YES;
-    [self.manager updateComposerNodes:@[@"beauty_IOS_lite", @"reshape_lite"]];
+    [self.manager updateComposerNodes:@[@"beauty_IOS_lite", @"reshape_lite", @"/lip/lite/shaonvfen", @"/eyeshadow/shaonvfen"]];
     
     [self.manager updateComposerNodeIntensity:@"beauty_IOS_lite" key:@"smooth" intensity:0.5];
     [self.manager updateComposerNodeIntensity:@"beauty_IOS_lite" key:@"sharp" intensity:0.7];
@@ -44,11 +44,13 @@ static GPEffectManager *_shared;
     [self.manager updateComposerNodeIntensity:@"reshape_lite" key:@"Internal_Deform_Overall" intensity:0.35];
     [self.manager updateComposerNodeIntensity:@"reshape_lite" key:@"Internal_Deform_Eye" intensity:0.35];
     [self.manager updateComposerNodeIntensity:@"reshape_lite" key:@"Internal_Deform_MovNose" intensity:0];
+    
+    [self.manager updateComposerNodeIntensity:@"/lip/lite/shaonvfen" key:@"Internal_Makeup_Lips" intensity:0.5];
+    
+    [self.manager updateComposerNodeIntensity:@"/eyeshadow/shaonvfen" key:@"Internal_Makeup_Eye" intensity:0.35];
 }
 
 - (CIImage *)processWithCVPixelBuffer:(CVPixelBufferRef)pixelBuffer rotation:(int)rotation timeStamp:(double)timeStamp {
-    [self updateEffectManager];
-    
     BEPixelBufferInfo *pixelBufferInfo = [self.imageUtils getCVPixelBufferInfo:pixelBuffer];
     if (pixelBufferInfo.format != BE_BGRA) {
         pixelBuffer = [self.imageUtils transforCVPixelBufferToCVPixelBuffer:pixelBuffer outputFormat:BE_BGRA];
